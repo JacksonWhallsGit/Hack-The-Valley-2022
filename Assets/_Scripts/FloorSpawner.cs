@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class FloorSpawner : MonoBehaviour
 {
-    public GameObject tile;
+    public List<GameObject> tiles;
     public bool isEmpty;
 
-    void FixedUpdate()
+	private void Start()
+	{
+        //tiles = new List<GameObject>(Resources.LoadAll<GameObject>("Terrain"));
+	}
+
+	void FixedUpdate()
     {
         isEmpty = true;
     }
@@ -21,7 +26,8 @@ public class FloorSpawner : MonoBehaviour
     {
         if (isEmpty)
         {
-            Instantiate(tile, new Vector3(transform.position.x, 0, transform.position.z), Quaternion.identity);
+            Instantiate(tiles[Random.Range(0,4)], new Vector3(0, -0.25f, transform.position.z), Quaternion.identity);
+            isEmpty = false;
         }
     }
 

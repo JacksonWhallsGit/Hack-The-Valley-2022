@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            Physics.gravity = new Vector3(0, -9.8f, 0);
+            Physics.gravity = new Vector3(0, -20f, 0);
             isJumping = false;
             animator.SetBool("isJumping", false);
         }
