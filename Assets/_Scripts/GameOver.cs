@@ -7,6 +7,7 @@ public class GameOver : MonoBehaviour
 {
 
     [SerializeField] private GameObject endScreen;
+    [SerializeField] private AudioSource gameOverSound;
 
     private void Awake()
     {
@@ -16,6 +17,7 @@ public class GameOver : MonoBehaviour
 
     public void EndGame()
     {
+        gameOverSound.Play();
         endScreen.SetActive(true);
         StopWatch.stopWatchInstance.StopTheStopWatch();
     }

@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
 
     private Rigidbody rb;
-
+    [SerializeField] private AudioSource jumpSound;
     private Boolean isJumping = false;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] Transform groundCheckPoint;
@@ -53,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (((Input.GetKeyDown(KeyCode.Space) || (jumpBufferTime > 0 && jumpBufferTime < 0.4f)) && IsGrounded()))
         {
+            jumpSound.Play();
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
             jumpBufferTime = 0.4f;
             jumpIsBuffered = false;
