@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     private float jumpBufferTime = 0.4f;
     private Boolean jumpIsBuffered = false;
+    private Animator animator;
 
     private Rigidbody rb;
 
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,11 +37,13 @@ public class PlayerMovement : MonoBehaviour
         if (!IsGrounded())
         {
             isJumping = true;
+            animator.SetBool("isJumping", true);
         }
         else
         {
-            Physics.gravity = new Vector3(0, -9.8f, 0);
+            Physics.gravity = new Vector3(0, -20f, 0);
             isJumping = false;
+            animator.SetBool("isJumping", false);
         }
 
         if(isJumping && rb.velocity.y < 0)
