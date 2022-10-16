@@ -8,6 +8,12 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
+
+    private void Awake()
+    {
+        Time.timeScale = 1f;
+    }
+
     public static MainMenu mainMenuInstance;
     [SerializeField]
     private TMP_InputField userNameInput;
@@ -26,6 +32,7 @@ public class MainMenu : MonoBehaviour
 
     public void SaveUserName()
     {
+        Debug.Log(userNameInput.text);
         PlayerPrefs.SetString("userName", userNameInput.text);
     }
 

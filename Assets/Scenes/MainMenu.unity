@@ -386,7 +386,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 102.576294, w: 15.688141}
+  m_margin: {x: 0, y: 0, z: 1.3487549, w: 1.1113739}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -472,7 +472,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 13712071}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: SaveUserName
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -673,7 +685,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00:00;00
+  m_text: 00:00:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6b45e9474bc1746e68b2eed74a66f4f2, type: 2}
   m_sharedMaterial: {fileID: -7421389042462772523, guid: 6b45e9474bc1746e68b2eed74a66f4f2, type: 2}
@@ -1417,7 +1429,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1st
+  m_text: 3rd
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6b45e9474bc1746e68b2eed74a66f4f2, type: 2}
   m_sharedMaterial: {fileID: -7421389042462772523, guid: 6b45e9474bc1746e68b2eed74a66f4f2, type: 2}
@@ -1591,7 +1603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3rd
+  m_text: 1st
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6b45e9474bc1746e68b2eed74a66f4f2, type: 2}
   m_sharedMaterial: {fileID: -7421389042462772523, guid: 6b45e9474bc1746e68b2eed74a66f4f2, type: 2}
@@ -2006,12 +2018,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1633b9afee83d4975baee3091e04aa1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLaderboardScoreText: {fileID: 1181898974}
-  firstNameText: {fileID: 1974143305}
-  secondLeaderboardScoreText: {fileID: 92720528}
-  secondNameText: {fileID: 187612361}
-  thirdLeaderboardScoreText: {fileID: 1929389439}
-  thirdNameText: {fileID: 2081441826}
+  firstLaderboardScoreText: {fileID: 1974143305}
+  firstNameText: {fileID: 1181898974}
+  secondLeaderboardScoreText: {fileID: 187612361}
+  secondNameText: {fileID: 92720528}
+  thirdLeaderboardScoreText: {fileID: 2081441826}
+  thirdNameText: {fileID: 1929389439}
 --- !u!114 &1171698257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2175,7 +2187,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 102.576294, w: 15.688141}
+  m_margin: {x: 0, y: 0, z: 2.9683838, w: 4.3506775}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3375,7 +3387,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 102.576294, w: 15.688141}
+  m_margin: {x: 0, y: 0, z: 2.9683838, w: 4.051407}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3603,7 +3615,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00:00;00
+  m_text: 00:00:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6b45e9474bc1746e68b2eed74a66f4f2, type: 2}
   m_sharedMaterial: {fileID: -7421389042462772523, guid: 6b45e9474bc1746e68b2eed74a66f4f2, type: 2}
@@ -4272,7 +4284,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00:00;00
+  m_text: 00:00:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6b45e9474bc1746e68b2eed74a66f4f2, type: 2}
   m_sharedMaterial: {fileID: -7421389042462772523, guid: 6b45e9474bc1746e68b2eed74a66f4f2, type: 2}
