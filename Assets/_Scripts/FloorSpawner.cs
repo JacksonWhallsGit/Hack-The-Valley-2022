@@ -21,7 +21,7 @@ public class FloorSpawner : MonoBehaviour
     {
         if (isEmpty)
         {
-            Instantiate(tiles[Random.Range(0,tiles.Count)], new Vector3(0, -0.25f, transform.position.z), Quaternion.identity);
+            Instantiate(tiles[Random.Range(0,4)], new Vector3(0, -0.25f, transform.position.z), Quaternion.identity);
             isEmpty = false;
         }
     }
