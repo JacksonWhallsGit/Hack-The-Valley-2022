@@ -7,11 +7,6 @@ public class FloorSpawner : MonoBehaviour
     public List<GameObject> tiles;
     public bool isEmpty;
 
-	private void Start()
-	{
-        //tiles = new List<GameObject>(Resources.LoadAll<GameObject>("Terrain"));
-	}
-
 	void FixedUpdate()
     {
         isEmpty = true;
